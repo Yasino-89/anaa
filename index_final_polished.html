@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>أنا ... مشروع قيد الإنشاء</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'HelveticaNeueArabic';
+      src: url('HelveticaNeueLTArabic-Roman.ttf') format('truetype');
+    }
+    
+    
+
+body {
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Cairo', sans-serif;
+  padding: 40px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+    .section {
+      background: white;
+      border: 2px solid #b28a00;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #b28a00;
+    }
+
+    h2 {
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block;
+      color: #444;
+    }
+
+    input, textarea {
+      background-color: #fffef9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .goal {
+      border: 1px dashed #aaa;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    #buildingImage {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .print-view {
+      background-color: #fcfcf5;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px dashed #aaa;
+      margin-top: 10px;
+    }
+
+    @media print {
+      
+
+body {
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Cairo', sans-serif;
+  padding: 40px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+      .print-view {
+        page-break-inside: avoid;
+      }
+      .section {
+        margin-bottom: 40px;
+        border-color: #b28a00 !important;
+      }
+      footer {
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #888;
+        font-size: 14px;
+      }
+    }
+
+    .no-print {
+      display: block;
+    }
+    @media print {
+  
+    
+
+body {
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Cairo', sans-serif;
+  padding: 40px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+    .section {
+      background: white;
+      border: 2px solid #b28a00;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #b28a00;
+    }
+
+    h2 {
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block;
+      color: #444;
+    }
+
+    input, textarea {
+      background-color: #fffef9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .goal {
+      border: 1px dashed #aaa;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    #buildingImage {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .print-view {
+      background-color: #fcfcf5;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px dashed #aaa;
+      margin-top: 10px;
+    }
+
+    @media print {
+      
+
+body {
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Cairo', sans-serif;
+  padding: 40px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+      .print-view {
+        page-break-inside: avoid;
+      }
+      .section {
+        margin-bottom: 40px;
+        border-color: #b28a00 !important;
+      }
+      footer {
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #888;
+        font-size: 14px;
+      }
+    }
+
+  .print-view {
+    page-break-inside: avoid;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+      .no-print {
+        display: none !important;
+      }
+      .print-view {
+        display: block !important;
+      }
+      input, textarea {
+        display: none !important;
+      }
+    }
+    h1, h2 {
+      text-align: center;
+      color: #b28a00;
+    }
+    .cover {
+      page-break-after: always;
+    }
+    .label {
+      font-weight: bold;
+      margin-top: 20px;
+      display: block;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'HelveticaNeueArabic', sans-serif;
+    }
+    .print-view {
+      display: none;
+      margin-bottom: 30px;
+      background-color: #f7f7f7;
+      padding: 10px 15px;
+      border-radius: 6px;
+      border: 1px dashed #aaa;
+      white-space: pre-wrap;
+    }
+    .goal {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    #buildingImage {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  
+#finalPlan {
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #222;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: 'Cairo', sans-serif;
+}
+
+.final-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 20px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+</style>
+</head>
+<body>
+
+<div id="content">
+
+  <!-- صفحة الغلاف -->
+  <div class="cover">
+    <h1>🧱 أنا ... مشروع قيد الإنشاء</h1>
+    <h2>خطة تطوير ذاتية شخصية</h2>
+    <p style="text-align:center; font-size: 20px; margin-top: 60px;">اسم المشارك:</p>
+    <input type="text" id="nameInput" placeholder="اكتب اسمك هنا" style="text-align: center; font-size: 20px; border: none; border-bottom: 2px solid #b28a00;">
+    <div id="nameDisplay" class="print-view" style="text-align:center; font-size: 20px;"></div>
+    <p style="text-align:center; font-size: 18px; margin-top: 60px;">تاريخ الإعداد: <span id="date"></span></p>
+  </div>
+
+  <!-- بقية الخطة -->
+  <div class="section">
+    <label class="label">📷 صورة المبنى الذي يمثلني</label>
+    <input type="file" accept="image/*" onchange="previewImage(event)" class="no-print">
+    <img id="buildingImage" />
+  </div>
+
+  
+  <div class="section">
+    <h2>📝 خطوات عملية لإعداد خطتك</h2>
+    <ol style="line-height: 1.8; font-size: 18px;">
+      <li>ابدأ بتحديد رؤيتك لنفسك في المستقبل.</li>
+      <li>اكتب أهدافك بطريقة SMART (محددة، قابلة للقياس، قابلة للتحقيق، مرتبطة، ومؤطرة زمنياً).</li>
+      <li>حدد المهارات والعادات التي تحتاجها لتحقيق هذه الأهداف.</li>
+      <li>فكر في الموارد التي ستساعدك: كتب، أشخاص، منصات تعلم، إلخ.</li>
+      <li>دوّن من يمكنه دعمك خلال رحلتك.</li>
+      <li>راجع خطتك، وكن مستعدًا لتعديلها بشكل مستمر حسب تقدمك.</li>
+    </ol>
+  </div>
+
+<div class="section">
+    <label class="label">✍️ رؤيتي - النسخة التي أطمح أن أكونها</label>
+    <textarea id="visionInput" rows="5" placeholder="من أريد أن أكون؟ ما القيم التي أعيش بها؟ ما الأثر الذي أطمح له؟"></textarea>
+    <div id="visionDisplay" class="print-view"></div>
+  </div>
+
+  <div class="section">
+    <label class="label">🎯 أهدافي (SMART)</label>
+    <div id="goals"></div>
+    <button type="button" onclick="addGoal()" class="no-print">➕ إضافة هدف</button>
+  </div>
+
+  <div class="section">
+    <label class="label">🧰 المهارات والعادات والموارد</label>
+    <textarea id="skillsInput" rows="3" placeholder="المهارات، العادات، الكتب، الأشخاص..."></textarea>
+    <div id="skillsDisplay" class="print-view"></div>
+  </div>
+
+  <div class="section">
+    <label class="label">🤝 الدعم المطلوب</label>
+    <textarea id="supportInput" rows="2" placeholder="من يدعمني؟ من ألجأ إليه؟"></textarea>
+    <div id="supportDisplay" class="print-view"></div>
+  </div>
+</div>
+
+<div style="text-align: center;" class="no-print">
+  <button onclick="printCleanVersion()">🖨️ طباعة الخطة</button>
+</div>
+
+
+
+
+<footer class="print-view">
+  مشروع قيد الإنشاء - 2025
+</footer>
+
+
+
+
+<div id="finalPlan" style="display:none; direction: rtl; font-family: 'Cairo', sans-serif; padding: 40px;">
+  <h1 style="color: #b28a00; text-align:center; background-color: rgba(255,255,255,0.95); padding: 15px 30px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">📄 خطتي الشخصية</h1><div class="final-box">
+  <p><strong>الاسم:</strong> <span id="finalName"></span></p>
+  <p><strong>تاريخ الإعداد:</strong> <span id="finalDate"></span></p>
+  </div><div class="final-box">
+  </div><div class="final-box"><h3>✍️ رؤيتي</h3>
+  <p id="finalVision"></p>
+
+  </div><div class="final-box"><h3>🎯 أهدافي</h3>
+  <ul id="finalGoals"></ul>
+
+  </div><div class="final-box"><h3>🧰 المهارات والعادات والموارد</h3>
+  <p id="finalSkills"></p>
+
+  </div><div class="final-box"><h3>🤝 الدعم المطلوب</h3>
+  <p id="finalSupport"></p>
+</div>
+
+
+
+
+
+<script>
+function previewImage(event) {
+  const reader = new FileReader();
+  reader.onload = function(){
+    const img = document.getElementById('buildingImage');
+    img.src = reader.result;
+    img.style.display = 'block';
+  };
+  reader.readAsDataURL(event.target.files[0]);
+}
+
+function addGoal() {
+  const container = document.getElementById('goals');
+  const index = container.children.length + 1;
+  const goalDiv = document.createElement('div');
+  goalDiv.className = 'goal';
+  goalDiv.innerHTML = `
+    <label class="label">الهدف ${index}</label>
+    <input type="text" class="goal-field" placeholder="مثال: تطوير مهاراتي القيادية">
+    <input type="text" class="goal-field" placeholder="📏 كيف أقيسه؟">
+    <input type="text" class="goal-field" placeholder="💡 كيف أحققه؟">
+    <input type="text" class="goal-field" placeholder="🎯 لماذا هو مهم؟">
+    <input type="text" class="goal-field" placeholder="🕒 متى أحققه؟">
+    <div class="print-view"></div>
+  `;
+  container.appendChild(goalDiv);
+}
+
+function printCleanVersion() {
+  document.getElementById('finalName').textContent = document.getElementById('nameInput').value;
+  document.getElementById('finalDate').textContent = new Date().toLocaleDateString('en-GB');
+  document.getElementById('finalVision').textContent = document.getElementById('visionInput').value;
+  document.getElementById('finalSkills').textContent = document.getElementById('skillsInput').value;
+  document.getElementById('finalSupport').textContent = document.getElementById('supportInput').value;
+
+  const goalList = document.getElementById('finalGoals');
+  goalList.innerHTML = '';
+  const goalSections = document.querySelectorAll('#goals .goal');
+  goalSections.forEach(section => {
+    const inputs = section.querySelectorAll('.goal-field');
+    
+    
+    const item = document.createElement('div');
+    item.className = 'final-box';
+    const values = Array.from(inputs).map(i => i.value).filter(v => v.trim() !== '');
+    item.innerHTML = `<strong>الهدف ${index + 1}</strong><br>` + values.map(v => `<p>• ${v}</p>`).join('');
+    goalList.appendChild(item);
+
+
+  });
+
+  document.getElementById('content').style.display = 'none';
+  document.getElementById('finalPlan').style.display = 'block';
+
+  window.print();
+
+  window.onafterprint = () => {
+    document.getElementById('finalPlan').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  };
+}
+
+document.getElementById('date').textContent = new Date().toLocaleDateString('en-GB');
+</script>
+
+</body>
+</html>
+
